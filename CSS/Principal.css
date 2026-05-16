@@ -1,0 +1,506 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.contenedor1{
+    background-image: url(/IMAGENES/Espacio\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+.Encabezado1{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: aliceblue;
+     background: linear-gradient(
+        to top, 
+        rgba(0, 0, 0, 0.132),   /* transparente abajo */
+        rgb(0, 0, 0)    /* negro sólido arriba */
+    );
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
+
+.frase1{
+    font-family: arial;
+    padding-left: 330px;
+    padding-right: 900px;
+    h1{
+    padding: 5px;
+    font-size: 40px;
+    color: rgb(156, 224, 239);
+
+    }
+    h2{
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+
+    }
+}
+/* Primera Ley de Newton */
+.PrimeraLey{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 510px;
+    font-family: arial;
+
+
+
+.infoPrimeraLey{
+    flex: 1;
+    width: 100px;
+    padding-right: 30px;
+    h1{
+    font-size: 40px;
+    color: rgba(25, 65, 117, 0.975);   
+    }
+    h2{
+        font-size: 22px;
+        color: rgb(14, 24, 27);
+    }
+}
+.animacionPrimeraLey{
+    flex: 1;
+    text-align: center;
+    h1{
+        color: rgba(25, 65, 117, 0.975);
+    }
+}
+.contenedor-animacion{
+    width: 800px;
+    height: 300px;
+    border: 2px solid white;
+    position: relative;
+    overflow: hidden;
+    background: #1e293b;
+}
+
+.bloque{
+    width: 70px;
+    height: 70px;
+    background: #3b82f6;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #1c92f2;
+    transition: transform 0.1s linear;      
+}
+.contenedor-animacion::after{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: white;
+    position: absolute;
+    bottom: 0;
+}
+.friccion{
+    width: 200px;
+    height: 100%;
+    background: rgba(255,0,0,0.2);
+    position: absolute;
+    right: 0;
+}
+button{
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#btnMover{
+    background: #2563eb;
+    color: white;
+}
+#btnReiniciar{
+    background: #dc2626;
+    color: white;
+}
+}
+/* Segunda Ley de Newton */ 
+.SegundaLey{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 890px;
+    font-family: arial;
+    background-color:  rgba(25, 65, 117, 0.975);
+
+.infoSegundaLey{
+    flex: 1;
+    width: 100px;
+    padding-right: 30px;
+    h1{
+    font-size: 40px;
+    color: rgba(221, 255, 0, 0.975);   
+    }
+    h2{
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+    }
+}
+.animacionSegundaLey{
+    flex: 1;
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #0f172a00;
+    border-radius: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.panelNewton h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.inputsNewton{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+}
+
+.campo label{
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.campo input{
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.botonNewton{
+    margin-top: 25px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+}
+
+.botonNewton:hover{
+    background: #1d4ed8;
+}
+
+.resultadoNewton{
+    margin-top: 30px;
+    background: #1e293bda;
+    padding: 20px;
+    border-radius: 15px;
+    line-height: 1.8;
+    min-height: 120px;
+}
+
+.escena{
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to top, #33415500 0%, #0f172a 100%);
+    border-radius: 20px;
+}
+
+.carretera{
+    width: 100%;
+    height: 70px;
+    background: #2b2b2b;
+    position: absolute;
+    bottom: 0;
+}
+
+#carro{
+    width: 180px;
+    height: 70px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    transition: transform 2s ease;
+}
+
+.cabina{
+    width: 90px;
+    height: 40px;
+    background: #3b82f6;
+    position: absolute;
+    top: -20px;
+    left: 90px;
+    border-radius: 10px 10px 0 0;
+}
+
+#carro::before{
+    content: "";
+    width: 180px;
+    height: 60px;
+    background: #2563eb;
+    position: absolute;
+    border-radius: 15px;
+}
+
+.rueda{
+    width: 40px;
+    height: 40px;
+    background: black;
+    border: 5px solid #94a3b8;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -15px;
+}
+
+.rueda1{
+    left: 90px;
+}
+
+.rueda2{
+    right: -60px;
+}
+}
+.TerceraLey{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 1100px;
+    font-family: arial;
+
+.infoTerceraLey{
+    flex: 1;
+    width: 100px;
+    padding-right: 30px;
+    h1{
+    font-size: 40px;
+    color: rgba(25, 65, 117, 0.975);   
+    }
+    h2{
+        font-size: 22px;
+        color: rgb(14, 24, 27);
+    }
+}
+.animacionTerceraLey{
+    flex: 1;
+    text-align: center;
+    h1{
+        color: rgba(25, 65, 117, 0.975);
+    }
+    
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #020617;
+    border-radius: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+
+
+.contenedorTercera h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.inputsTercera{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+}
+
+.campo label{
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.campo input{
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.botonTercera{
+    margin-top: 25px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 12px;
+    background: #dc2626;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botonTercera:hover{
+    background: #b91c1c;
+}
+
+.resultadoTercera{
+    margin-top: 30px;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    line-height: 1.8;
+    min-height: 140px;
+}
+
+.escenaCohete{
+    margin-top: 40px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(to top, #020617 0%, #0f172a 60%, #1d4ed8 100%);
+}
+
+.suelo{
+    width: 100%;
+    height: 60px;
+    background: #374151;
+    position: absolute;
+    bottom: 0;
+}
+
+#cohete{
+    width: 90px;
+    height: 180px;
+    background: #e2e8f0;
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+
+    transform: translateX(-50%);
+
+    border-radius: 50px 50px 20px 20px;
+
+    transition: bottom 3s ease;
+}
+
+/* punta */
+
+.punta{
+    width: 0;
+    height: 0;
+
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 70px solid #ef4444;
+
+    position: absolute;
+    top: -65px;
+}
+
+/* ventana */
+
+.ventana{
+    width: 35px;
+    height: 35px;
+
+    background: #38bdf8;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 45px;
+    left: 27px;
+
+    border: 4px solid white;
+}
+
+/* aletas */
+
+.aleta{
+    width: 25px;
+    height: 60px;
+
+    background: #ef4444;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.izquierda{
+    left: -18px;
+
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+}
+
+.derecha{
+    right: -18px;
+
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
+}
+
+/* fuego */
+
+#fuego{
+    width: 35px;
+    height: 0px;
+
+    background: orange;
+
+    position: absolute;
+
+    bottom: -5px;
+    left: 27px;
+
+    border-radius: 0 0 50% 50%;
+
+    transition: height 0.2s;
+
+    box-shadow: 0 0 25px orange;
+}
+    
+    }
+}
+
+    

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/Principal.css">
+    <title>Leyes de Newton</title>
+</head>
+<body>
+    <div class="contenedor1">
+    <header class="Encabezado1">
+        <h1 class="TituloEncabezado">Fisica 1</h1> 
+    </header>
+    <div class="frase1">
+<h1>Leyes del movimiento de Newton</h1>
+<h2>Las leyes del movimiento de Sir Isaac Newton explican la relación entre un objeto físico y las fuerzas que actúan sobre él. Comprender esta información nos proporciona las bases de la física moderna.</h2>
+    </div>
+    </div>
+<Section class="PrimeraLey">
+        <div class="infoPrimeraLey">
+<h1>Primera Ley de Newton - Inercia</h1>
+<h2>Un objeto en reposo permanece en reposo, y un objeto en movimiento permanece en movimiento a velocidad constante y en línea recta a menos que actúe sobre él una fuerza desequilibrada.</h2>        
+<h2>Si todas las fuerzas externas se anulan entre sí, entonces no hay ninguna fuerza neta actuando sobre el objeto. Si no hay ninguna fuerza neta actuando sobre el objeto, este mantendrá una velocidad constante.</h2>        
+    
+        </div>
+    <div class="animacionPrimeraLey">
+        <h1>Simulación de aplicación de fuerza a un bloque en reposo</h1>
+            <div class="contenedor-animacion">
+
+    <div class="bloque" id="bloque"></div>
+    <div class="friccion"></div>
+
+</div>
+
+<button id="btnMover">
+    Aplicar Fuerza
+</button>
+<button id="btnReiniciar">
+    Reiniciar
+</button>
+
+    </div>
+    
+</Section>
+<section class="SegundaLey">
+    <div class="infoSegundaLey">
+        <h1>Segunda Ley de Newton - Fuerza</h1>
+        <h2>La aceleración de un objeto depende de su masa y de la cantidad de fuerza aplicada.</h2>
+        <h2>Su segunda ley define una  fuerza  como igual al cambio en  el momento  (masa por velocidad) por cambio en el tiempo. El momento se define como la masa  m de un  objeto por su velocidad  V.</h2>
+        <h2>La segunda ley de Newton habla de los cambios en el momento lineal (mV). Por lo tanto, en este punto, no podemos separar cuánto cambió la masa y cuánto cambió la velocidad. Solo sabemos cuánto cambió el producto (mV).</h2>
+        <h1>Problema a resolver</h1>
+        <h2>En una pista de pruebas, un automóvil experimental se encuentra inicialmente en reposo.
+            Los ingenieros desean analizar cómo cambia su movimiento dependiendo de la fuerza aplicada al vehículo y su masa.</h2>
+        <h2>Durante una prueba, al automóvil se le aplica una fuerza constante de 2400 N, y el vehículo posee una masa de 800 kg.</h2>
+        <h1>Ingresando los datos al sistema, calcule:</h1>
+        <h2>¿Cual es la aceleración del automóvil?</h2>
+        <h2>Si la masa del automóvil aumentara a 1200 kg manteniendo la misma fuerza, ¿qué sucedería con la aceleración?</h2>
+    </div>
+    <div class="animacionSegundaLey">
+        <h1>Ingrese 2 datos para calcular el tercero</h1>
+        <div class="panelNewton">
+
+  <div class="inputsNewton">
+
+    <div class="campo">
+      <label>Fuerza (N)</label>
+      <input type="number" id="fuerza" placeholder="Ej: 100">
+    </div>
+
+    <div class="campo">
+      <label>Masa (kg)</label>
+      <input type="number" id="masa" placeholder="Ej: 20">
+    </div>
+
+    <div class="campo">
+      <label>Aceleración (m/s²)</label>
+      <input type="number" id="aceleracion" placeholder="Ej: 5">
+    </div>
+
+  </div>
+
+  <button onclick="calcularNewton()" class="botonNewton">
+    Calcular
+  </button>
+
+  <div id="resultadoNewton" class="resultadoNewton">
+
+  </div>
+
+  <div class="escena">
+
+    <div class="carretera"></div>
+
+    <div id="carro">
+
+      <div class="cabina"></div>
+
+      <div class="rueda rueda1"></div>
+      <div class="rueda rueda2"></div>
+
+    </div>
+
+  </div>
+
+</div>
+    </div>
+    
+</section>
+<section class="TerceraLey">
+    <div class="infoTerceraLey">
+        <h1>Tercera Ley de Newton - Acción y Reacción</h1>
+        <h2>Siempre que un objeto ejerce una fuerza sobre un segundo objeto, el segundo objeto ejerce una fuerza igual y opuesta sobre el primero.</h2>
+        <h2>Su tercera ley establece que para cada acción (fuerza) en la naturaleza existe una reacción igual y opuesta . Si el objeto A ejerce una fuerza sobre el objeto B, el objeto B también ejerce una fuerza igual y opuesta sobre el objeto A.</h2>
+        <h1>Problema a resolver</h1>
+        <h2>Una agencia espacial realiza pruebas sobre un cohete experimental antes de su lanzamiento oficial.</h2>
+        <h2>El cohete funciona expulsando gases a gran velocidad hacia abajo y
+            como consecuencia, los gases ejercen una fuerza de reacción que impulsa el cohete hacia arriba.</h2>
+        <h2>Para analizar el comportamiento del sistema, se utiliza una simulación interactiva donde es posible calcular fuerza, masa o aceleración</h2>
+        <h2>Se realizo una prueba en la cual; el motor genera una fuerza de expulsion de 9000 N, cuando el cohete poseia una masa de 1500 kg.</h2>
+        <h1>Ingresando los datos al sistema, calcule:</h1>
+        <h2>¿Calcule la aceleración producida por el cohete durante la prueba realizada?</h2>
+        <h2>Explique el principio de acción y reacción en el contexto del cohete.</h2>
+    </div>
+    <div class="animacionTerceraLey">
+        <h1>Ingrese 2 datos para calcular el tercero</h1>
+            <div class="contenedorTercera">
+
+
+    <div class="inputsTercera">
+
+        <div class="campo">
+            <label>Fuerza (N)</label>
+            <input type="number" id="fuerza3" placeholder="Ej: 1200">
+        </div>
+
+        <div class="campo">
+            <label>Masa (kg)</label>
+            <input type="number" id="masa3" placeholder="Ej: 400">
+        </div>
+
+        <div class="campo">
+            <label>Aceleración (m/s²)</label>
+            <input type="number" id="aceleracion3" placeholder="Ej: 3">
+        </div>
+
+    </div>
+
+    <button class="botonTercera" onclick="calcularTerceraLey()">
+        Calcular
+    </button>
+
+    <div id="resultadoTercera" class="resultadoTercera">
+
+    </div>
+
+    <div class="escenaCohete">
+
+        <div class="suelo"></div>
+
+        <div id="cohete">
+
+            <div class="punta"></div>
+
+            <div class="ventana"></div>
+
+            <div class="aleta izquierda"></div>
+            <div class="aleta derecha"></div>
+
+            <div id="fuego"></div>
+
+        </div>
+
+    </div>
+
+</div>
+    </div>
+</section>
+
+</body>
+</html>
+<script>
+
+const bloque = document.getElementById("bloque");
+
+const btnMover = document.getElementById("btnMover");
+const btnReiniciar = document.getElementById("btnReiniciar");
+
+let posicion = 0;
+let velocidad = 5;
+
+let animacion;
+let moviendo = false;
+
+btnMover.addEventListener("click", () => {
+
+    if(moviendo) return;
+
+    moviendo = true;
+
+    function animar(){
+
+        posicion += velocidad;
+
+        bloque.style.left = posicion + "px";
+
+        if(posicion < 700){
+            animacion = requestAnimationFrame(animar);
+        }
+
+    }
+
+    animar();
+
+});
+
+
+// BOTÓN REINICIAR
+
+btnReiniciar.addEventListener("click", () => {
+
+    // detener animación
+    cancelAnimationFrame(animacion);
+
+    // reiniciar variables
+    posicion = 0;
+    velocidad = 5;
+
+    // devolver bloque al inicio
+    bloque.style.left = "0px";
+
+    // permitir volver a mover
+    moviendo = false;
+
+});
+function calcularNewton(){
+
+    let fuerza = document.getElementById("fuerza").value;
+    let masa = document.getElementById("masa").value;
+    let aceleracion = document.getElementById("aceleracion").value;
+
+    let vacios = 0;
+
+    if(fuerza === "") vacios++;
+    if(masa === "") vacios++;
+    if(aceleracion === "") vacios++;
+
+    if(vacios !== 1){
+        alert("Debes dejar SOLO un campo vacío.");
+        return;
+    }
+
+    fuerza = parseFloat(fuerza);
+    masa = parseFloat(masa);
+    aceleracion = parseFloat(aceleracion);
+
+    let procedimiento = "";
+
+    if(isNaN(fuerza)){
+
+        fuerza = masa * aceleracion;
+
+        procedimiento += `
+            <h3>Procedimiento</h3>
+
+            <p><strong>Fórmula:</strong> F = m × a</p>
+
+            <p><strong>Sustituyendo:</strong></p>
+
+            <p>F = ${masa} × ${aceleracion}</p>
+
+            <p><strong>Resultado:</strong></p>
+
+            <p>F = ${fuerza.toFixed(2)} N</p>
+        `;
+    }
+
+    else if(isNaN(masa)){
+
+        masa = fuerza / aceleracion;
+
+        procedimiento += `
+            <h3>Procedimiento</h3>
+
+            <p><strong>Fórmula:</strong> m = F / a</p>
+
+            <p><strong>Sustituyendo:</strong></p>
+
+            <p>m = ${fuerza} / ${aceleracion}</p>
+
+            <p><strong>Resultado:</strong></p>
+
+            <p>m = ${masa.toFixed(2)} kg</p>
+        `;
+    }
+
+    else if(isNaN(aceleracion)){
+
+        aceleracion = fuerza / masa;
+
+        procedimiento += `
+            <h3>Procedimiento</h3>
+
+            <p><strong>Fórmula:</strong> a = F / m</p>
+
+            <p><strong>Sustituyendo:</strong></p>
+
+            <p>a = ${fuerza} / ${masa}</p>
+
+            <p><strong>Resultado:</strong></p>
+
+            <p>a = ${aceleracion.toFixed(2)} m/s²</p>
+        `;
+    }
+
+    document.getElementById("resultadoNewton").innerHTML = procedimiento;
+
+    animarCarro(aceleracion);
+}
+
+function animarCarro(aceleracion){
+
+    let carro = document.getElementById("carro");
+
+    carro.style.transition = "none";
+    carro.style.transform = "translateX(0px)";
+
+    setTimeout(() => {
+
+        let distancia = aceleracion * 60;
+
+        if(distancia > 1000){
+            distancia = 1000;
+        }
+
+        carro.style.transition = "transform 3s ease";
+        carro.style.transform = `translateX(${distancia}px)`;
+
+    }, 100);
+}
+/* ===================================== */
+/* JAVASCRIPT */
+/* ===================================== */
+
+function calcularTerceraLey(){
+
+    let fuerza = document.getElementById("fuerza3").value;
+    let masa = document.getElementById("masa3").value;
+    let aceleracion = document.getElementById("aceleracion3").value;
+
+    let vacios = 0;
+
+    if(fuerza === "") vacios++;
+    if(masa === "") vacios++;
+    if(aceleracion === "") vacios++;
+
+    if(vacios !== 1){
+
+        alert("Debes dejar SOLO un campo vacío.");
+
+        return;
+    }
+
+    fuerza = parseFloat(fuerza);
+    masa = parseFloat(masa);
+    aceleracion = parseFloat(aceleracion);
+
+    let procedimiento = "";
+
+    /* ========================= */
+    /* CALCULAR FUERZA */
+    /* ========================= */
+
+    if(isNaN(fuerza)){
+
+        fuerza = masa * aceleracion;
+
+        procedimiento = `
+            <h3>Procedimiento</h3>
+
+            <p><strong>Fórmula:</strong></p>
+
+            <p>F = m × a</p>
+
+            <p><strong>Sustituyendo:</strong></p>
+
+            <p>F = ${masa} × ${aceleracion}</p>
+
+            <p><strong>Resultado:</strong></p>
+
+            <p>F = ${fuerza.toFixed(2)} N</p>
+        `;
+    }
+
+    /* ========================= */
+    /* CALCULAR MASA */
+    /* ========================= */
+
+    else if(isNaN(masa)){
+
+        masa = fuerza / aceleracion;
+
+        procedimiento = `
+            <h3>Procedimiento</h3>
+
+            <p><strong>Fórmula:</strong></p>
+
+            <p>m = F / a</p>
+
+            <p><strong>Sustituyendo:</strong></p>
+
+            <p>m = ${fuerza} / ${aceleracion}</p>
+
+            <p><strong>Resultado:</strong></p>
+
+            <p>m = ${masa.toFixed(2)} kg</p>
+        `;
+    }
+
+    /* ========================= */
+    /* CALCULAR ACELERACION */
+    /* ========================= */
+
+    else if(isNaN(aceleracion)){
+
+        aceleracion = fuerza / masa;
+
+        procedimiento = `
+            <h3>Procedimiento</h3>
+
+            <p><strong>Tercera Ley:</strong></p>
+
+            <p>
+                El cohete expulsa gases hacia abajo
+                y recibe una fuerza de reacción
+                que lo impulsa hacia arriba.
+            </p>
+
+            <hr>
+
+            <p><strong>Fórmula:</strong></p>
+
+            <p>a = F / m</p>
+
+            <p><strong>Sustituyendo:</strong></p>
+
+            <p>a = ${fuerza} / ${masa}</p>
+
+            <p><strong>Resultado:</strong></p>
+
+            <p>a = ${aceleracion.toFixed(2)} m/s²</p>
+        `;
+    }
+
+    document.getElementById("resultadoTercera").innerHTML = procedimiento;
+
+    iniciarAnimacion(aceleracion);
+}
+
+/* ===================================== */
+/* ANIMACION */
+/* ===================================== */
+
+function iniciarAnimacion(aceleracion){
+
+    let cohete = document.getElementById("cohete");
+    let fuego = document.getElementById("fuego");
+
+    /* reiniciar */
+
+    cohete.style.transition = "none";
+    cohete.style.bottom = "60px";
+
+    fuego.style.height = "0px";
+
+    /* forzar refresco */
+
+    void cohete.offsetWidth;
+
+    setTimeout(() => {
+
+        /* activar fuego */
+
+        fuego.style.height = "120px";
+
+        /* calcular altura */
+
+        let altura = aceleracion * 40;
+
+        if(altura > 380){
+            altura = 380;
+        }
+
+        /* mover cohete */
+
+        cohete.style.transition = "bottom 4s ease-out";
+
+        cohete.style.bottom = (60 + altura) + "px";
+
+    }, 100);
+
+    /* apagar fuego */
+
+    setTimeout(() => {
+
+        fuego.style.height = "30px";
+
+    }, 4000);
+}
+</script>
