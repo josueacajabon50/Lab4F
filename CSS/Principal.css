@@ -3,7 +3,7 @@ body{
     padding: 0;
 }
 .contenedor1{
-    background-image: url(/IMAGENES/Espacio\ 2.jpg);
+    background-image: url("../IMAGENES/Espacio 2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
